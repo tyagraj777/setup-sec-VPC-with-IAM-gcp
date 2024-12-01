@@ -10,7 +10,7 @@ Key Features:
 
 Steps:
 
-4. main.tf Terraform scripts to provision:
+ "main.tf" Terraform scripts to provision:
    
 a. A VPC with subnets and associated routing.
 
