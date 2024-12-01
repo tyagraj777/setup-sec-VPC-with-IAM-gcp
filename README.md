@@ -32,6 +32,7 @@ check your current permissions, run:
 
 Grant Required Permissions If your account lacks the necessary permissions:
 Have an admin or owner of the project grant the roles/resourcemanager.projectIamAdmin role to your account:
+better use default compute service account**
 
 #gcloud projects add-iam-policy-binding <your_project_id> \
   --member="user:<your_email>" \
