@@ -27,10 +27,12 @@ Specifically, the Set IAM Binding operation requires elevated permissions.
 for this do,
 
 check your current permissions, run:
+
 #gcloud projects get-iam-policy <your_project_id> --flatten="bindings[].members" --format="table(bindings.role)"
 
 Grant Required Permissions If your account lacks the necessary permissions:
 Have an admin or owner of the project grant the roles/resourcemanager.projectIamAdmin role to your account:
+
 #gcloud projects add-iam-policy-binding <your_project_id> \
   --member="user:<your_email>" \
   --role="roles/resourcemanager.projectIamAdmin"
